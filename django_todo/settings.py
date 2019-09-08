@@ -26,7 +26,7 @@ SECRET_KEY = '&6e&ood(*p72y87)4_hxurce5lkdo4&b%j!&#b7(#l7c5!7to8'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['ves-django-todo.herokuapp.com',
+ALLOWED_HOSTS = [os.environ.get('C9_HOSTNAME'),
                 os.environ.get('HOSTNAME')]                               
 
 
